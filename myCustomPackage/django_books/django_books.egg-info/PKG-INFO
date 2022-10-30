@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: django-books
+Version: 2.0
+Summary: Sample Django app
+Home-page: https://www.saitozbey.com
+Author: Sait
+Author-email: ozbeyysait@gmail.com
+Maintainer: Sait
+Maintainer-email: ozbeyysait@gmail.com
+Keywords: django books
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Licence :: OSI Approved :: MIT Licence
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENCE
+
+===========================
+Django Book Collections
+===========================
+
+Book Collections is a Django app to manage receipts.
+
+Quick start
+===========
+
+1. Add "booksPackage" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'booksPackage',
+    ]
+
+2. Include the polls URLconf in your project urls.py like this::
+
+    path('books/', include('booksPackage.urls')),
+
+3. Run ``python manage.py migrate`` to create the receipts models.
+
+4. Start the development server and visit https://127.0.0.1:8080/books/books_json/
